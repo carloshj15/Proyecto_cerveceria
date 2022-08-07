@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}   
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f5f5dc;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #444546;
+} 
+
+
+.nav__menu{
+    padding: 20px;
+    background-color: brown;
+} 
+
+
+
+.nav__menu__general {
+    display: inline;
+    background-color: brown;
+}
+
+
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.grid-container{
+    background-color: beige;
+    display: grid;
+    grid-template-areas:
+    "menu principal principal"
+    "menu principal principal"
+    "menu barrilada barrilada"
+    "menu barrilada barrilada"
+    "menu fabrica fabrica"
+    "menu fabrica fabrica"
+    "menu contacto contacto"
+    "menu contacto contacto";
+    grid-template-rows:repeat(8, 1fr);
+    height: 90vh;
+    border: 5px solid brown;
+}
+
+.grid-item{
+    padding:20px ;
+
+}
+
+.grid-menu{
+    background-image: url(img/portada.png);
+    background-size: cover;
+    grid-area:menu;
+    color: white;
+}
+
+.grid-principal{
+    background-image: url(img/TiposDeCervezas.png);
+    background-size: cover;
+    grid-area: principal;
+    color: white;
+}
+
+.grid-fabrica{
+    background-image: url(img/fabrica.png);
+    background-size: cover;
+    grid-area: fabrica;
+    color: black;
+}
+
+.grid-barrilada{
+    background-image: url(img/barril.png);
+    background-size: cover;
+    grid-area: barrilada;
+    color: black;
+}
+
+.grid-contacto{
+    background-image: url(img/contactenos.png);
+    background-size: cover;
+    grid-area: contacto;
+    color: black;
+}
+
+.grid__conteiner{
+    display: grid;
+    grid-template-areas: 
+    "opcionUno opcionUno p1 p1"
+    "opcionUno opcionUno p1 p1"
+    "opcionDos opcionDos p2 p2"
+    "opcionDos opcionDos p2 p2";
+}
+
+.grid-opcionUno{
+    grid-area: opcionUno;
+    padding-top:20px ;
+
+}
+
+.barril__tamaño{
+    height: 483px;
+    width: 671px;
+}
+
+.grid-opcionDos{
+    grid-area: opcionDos;
+}
+
+.grid-p1{
+    grid-area: p1;
+    padding: 20px;
+}
+
+.grid-p2{
+    grid-area: p2;
+}
+
+.estilo__barrilada{
+    display: block;
+    text-align: center;
+}
+
+.logo__h1{
+    display: inline;
+}
+
+
+.nav__menu__link{
+    background-color: brown;
+    color: white;
+} 
+
+.footer__link{
+    background-color: brown;
+    color: inherit;
+}
+
+
+
+.footer{
+    background-color: brown;
+    color: white;
+}
+
+@media(min-width: 480px){
+    .grid-container {
+        background-color: brown;
+    }
+}

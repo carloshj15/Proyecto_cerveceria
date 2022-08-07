@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/icono.png" class="icono__principal">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Contactenos</title>
+</head>
+<body>
+    <header id="Titulo">
+        <h1 class="logo__h1">Cervecería Tomate-sto</h1>
+        <img src="img/logo3.png" alt="Logo">
+    
+        <nav>
+            <ul class="nav__menu">
+                <li  class="nav__menu__general"><a href="index.html" class="nav__menu__link">Inicio</a></li>
+                <li  class="nav__menu__general"><a href="estilosDeCervezas.html"class="nav__menu__link">Nuestras cervezas</a></li>
+                <li  class="nav__menu__general"><a href="fabrica.html"class="nav__menu__link">La Fabrica</a></li>
+                <li  class="nav__menu__general"><a href="barrilada.html"class="nav__menu__link">Barrilada</a></li>
+                <li  class="nav__menu__general"><a href="contacto.html"class="nav__menu__link">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <select name="Estado civil">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+        </select>
+        <br>
+        <label for="newsletter">¿Desea recibir el newsletter?</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <br>
+        <textarea name="textarea" id="comentarios" cols="30" rows="10">Comentarios</textarea>
+        <br>
+        <label for="boton envio"></label>
+        <input type="submit" value="Enviar formulario">
+        <label for="limpiar formulario"></label>
+        <input type="reset" value="Limpar formulario">
+    </form>
+</section>
+
+    <footer  class="footer">
+        <nav class="footer">
+        <a href="#Titulo" class="footer">Ir al comienzo</a>
+        <a href="mailto:carlos9390_6@hotmail.com" class="footer">Contactame aqui</a>
+        </nav>
+    
+        <p class="footer">Copyrigth 2022</p>
+    </footer>
+    
+</body>
+</html>
