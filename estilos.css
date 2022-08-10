@@ -5,17 +5,23 @@
 
 }   
 
-a {
-    color: inherit;
+a:hover {
+    color: black;
     text-decoration: none;
+    
 }
 
 body{
-    background-color: #f5f5dc;
+    background-color: rgb(245, 245, 220);
     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #444546;
 } 
 
+.h1icono{
+    text-align: justify;
+    font-size: 30px;
+    animation: lateral 10s 2 linear;
+}
 
 .nav__menu{
     padding: 20px;
@@ -28,7 +34,6 @@ body{
     display: inline;
     background-color: brown;
 }
-
 
 ul{
     display: block;
@@ -60,9 +65,9 @@ ul{
 
     "contacto contacto contacto";
 
-grid-template-columns: repeat(3, 1fr);
-
-grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 90vh;
     border: 5px solid brown;
 }
 
@@ -74,6 +79,8 @@ grid-template-rows: repeat(8, 1fr);
 .grid-menu{
     background-image: url(img/portada.png);
     background-size: cover;
+    width: 640px;
+    height: 680px;
     grid-area:menu;
     color: white;
 }
@@ -104,6 +111,11 @@ grid-template-rows: repeat(8, 1fr);
     background-size: cover;
     grid-area: contacto;
     color: black;
+}
+
+.grid-menu:hover{
+    width: 900px;
+    transition: width 2s;
 }
 
 .grid__conteiner{
@@ -235,7 +247,7 @@ grid-template-rows: repeat(8, 1fr);
     color: white;
 }
 
-@media(min-width: 480px) {
+@media(min-width: 800px) {
 
     .grid-container {
 
@@ -274,3 +286,18 @@ grid-template-rows: repeat(8, 1fr);
     }
 }
 
+
+@keyframes lateral{
+        0% {
+          opacity: 0;
+          transform: translateX(-100px);
+        }
+        20%,80% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(100px);}
+      }
+}
