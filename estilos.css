@@ -43,16 +43,26 @@ ul{
     background-color: beige;
     display: grid;
     grid-template-areas:
-    "menu principal principal"
-    "menu principal principal"
-    "menu barrilada barrilada"
-    "menu barrilada barrilada"
-    "menu fabrica fabrica"
-    "menu fabrica fabrica"
-    "menu contacto contacto"
-    "menu contacto contacto";
-    grid-template-rows:repeat(8, 1fr);
-    height: 90vh;
+
+    "menu menu menu"
+
+    "principal principal principal"
+
+    "principal principal principal"
+
+    "barrilada barrilada barrilada"
+
+    "barrilada barrilada barrilada"
+
+    "fabrica fabrica fabrica"
+
+    "fabrica fabrica fabrica"
+
+    "contacto contacto contacto";
+
+grid-template-columns: repeat(3, 1fr);
+
+grid-template-rows: repeat(8, 1fr);
     border: 5px solid brown;
 }
 
@@ -126,6 +136,7 @@ ul{
 
 .grid-p2{
     grid-area: p2;
+    padding-left: 50px;
 }
 
 .estilo__barrilada{
@@ -176,19 +187,21 @@ ul{
     background-image: url(img/tipoCervezas2.png);
     background-size: cover;
     grid-area: grid-imgPrincipal;
-
+    color: White;
 }
 
 .grid-img__1{
     background-image: url(img/opcion-1.png);
     background-size: cover;
     grid-area: grid-img__1;
+    color: White;
 }
 
 .grid-img__2{
     background-image: url(img/cervezas-frutales.png);
     background-size: cover;
     grid-area: grid-img__2;
+    color: White;
 }
 
 
@@ -196,6 +209,7 @@ ul{
     background-image: url(IMG/opcion-3.png);
     background-size: cover;
     grid-area: grid-img__3;
+    color: White;
 }
 
 
@@ -221,16 +235,42 @@ ul{
     color: white;
 }
 
-@media(min-width: 480px){
+@media(min-width: 480px) {
+
     .grid-container {
-        background-color: brown;
+
+        grid-template-areas:
+
+            "menu principal principal"
+
+            "menu principal principal"
+
+            "menu barrilada barrilada"
+
+            "menu barrilada barrilada"
+
+            "menu fabrica fabrica"
+
+            "menu fabrica fabrica"
+
+            "menu contacto contacto"
+
+            "menu contacto contacto";
+
     }
+
 }
 
 @media(min-width: 480px){
     .flex-conteiner{
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media(min-width:480px){
+    .grid-p1{
+        display: inline;
     }
 }
 
