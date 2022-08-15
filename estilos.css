@@ -41,18 +41,36 @@ header{
     background-color: brown;
 }
 
+
 ul{
     display: block;
     margin-block-start: 1em;
-    margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-}
+    list-style:none ;}
 
 .formulario{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: inherit;
+    font-size: 20px;
     padding: 10px;
 }
+
+.fondo{
+    display: flex;
+    background-image: url(img/imagesperga2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
 
 form{
     background-color: #f5f5dc;
@@ -342,6 +360,12 @@ textarea{
     }
 }
 
+@media(max-width:480px){
+    .fondo{
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 @keyframes lateral{
         0% {
