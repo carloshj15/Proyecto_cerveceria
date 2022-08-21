@@ -1,0 +1,23 @@
+{
+  "name": "proyecto_cerveceria",
+  "version": "1.0.0",
+  "description": "proyecto coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/translated.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloshj15/Proyecto_cerveceria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloshj15/Proyecto_cerveceria/issues"
+  },
+  "homepage": "https://github.com/carloshj15/Proyecto_cerveceria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
