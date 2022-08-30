@@ -1,0 +1,88 @@
+.formulario{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.fondo{
+    display: flex;
+    background-image: url(../img/imagesperga2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 500px;
+
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+
+form{
+    background-color: #f5f5dc;
+    width: 400px;
+    padding: 16px 16px;
+    border: 10px solid brown;
+    height: 100%;
+    
+}
+
+form label{
+    width: 75px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"]{
+    width: 100%;
+    padding: 3px 10px;
+    margin: 8px 0;
+    border: 1px solid #444546;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+form input[type="submit"]{
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 16px;
+    border: 1px solid brown;
+}
+form input[type="reset"]{
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 16px;
+    border: 1px solid brown;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid brown;
+    margin: 8px 0px;
+}
+
+@media(max-width:480px){
+    .fondo{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@keyframes lateral{
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);}
+  }

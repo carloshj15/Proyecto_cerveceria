@@ -1,0 +1,44 @@
+.logo__h1{
+    display: inline;
+}
+
+.nav__menu__link{
+    background-color: brown;
+    color: white;
+} 
+
+
+.h1icono{
+    text-align: justify;
+    font-size: 30px;
+    animation: lateral 10s 2 linear;
+}
+header{
+    background-color: #f5f5dc;
+}
+.encabezado{
+    background-color: #f5f5dc;
+    padding-top: 0px;
+}
+
+.nav__menu{
+    padding: 20px;
+    background-color: brown;
+} 
+
+
+
+.nav__menu__general {
+    display: inline;
+    background-color: brown;
+}
+
+
+ul{
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style:none ;
+}

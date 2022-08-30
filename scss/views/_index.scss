@@ -1,0 +1,113 @@
+.grid-container{
+    background-color: beige;
+    display: grid;
+    grid-template-areas:
+
+    "menu principal principal"
+
+    "menu principal principal"
+
+    "menu barrilada barrilada"
+
+    "menu barrilada barrilada"
+
+    "menu fabrica fabrica"
+
+    "menu fabrica fabrica"
+
+    "menu contacto contacto"
+
+    "menu contacto contacto";
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 90vh;
+    border: 5px solid brown;
+}
+
+.grid-item{
+    padding:20px ;
+
+}
+
+.grid-menu{
+    background-image: url(../img/portada.png);
+    background-size: cover;
+    width: 640px;
+    height: 680px;
+    grid-area:menu;
+    color: white;
+}
+
+.grid-principal{
+    background-image: url(../img/TiposDeCervezas.png);
+    background-size: cover;
+    grid-area: principal;
+    color: white;
+}
+
+.grid-fabrica{
+    background-image: url(../img/fabrica.png);
+    background-size: cover;
+    grid-area: fabrica;
+    color: black;
+}
+
+.grid-barrilada{
+    background-image: url(../img/barril.png);
+    background-size: cover;
+    grid-area: barrilada;
+    color: black;
+}
+
+.grid-contacto{
+    background-image: url(../img/contactenos.png);
+    background-size: cover;
+    grid-area: contacto;
+    color: black;
+}
+
+.grid-menu:hover{
+    width: 900px;
+    transition: width 2s;
+}
+
+@media(min-width: 800px) {
+
+    .grid-container {
+
+        grid-template-areas:
+
+            "menu principal principal"
+
+            "menu principal principal"
+
+            "menu barrilada barrilada"
+
+            "menu barrilada barrilada"
+
+            "menu fabrica fabrica"
+
+            "menu fabrica fabrica"
+
+            "menu contacto contacto"
+
+            "menu contacto contacto";
+
+    }
+
+}
+
+@keyframes lateral{
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);}
+  }

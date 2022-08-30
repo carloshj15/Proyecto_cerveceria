@@ -1,0 +1,61 @@
+.grid__conteinerCervezas{
+    display: grid;
+    grid-template-areas: 
+
+    "grid-imgPrincipal grid-imgPrincipal grid-imgPrincipal"
+    "grid-imgPrincipal grid-imgPrincipal grid-imgPrincipal"
+    "grid-imgPrincipal grid-imgPrincipal grid-imgPrincipal"
+    "grid-imgPrincipal grid-imgPrincipal grid-imgPrincipal"
+    "grid-imgPrincipal grid-imgPrincipal grid-imgPrincipal"
+    "grid-img__1 grid-img__2 grid-img__3"
+    "grid-img__1 grid-img__2 grid-img__3"
+    "grid-img__1 grid-img__2 grid-img__3"
+    "grid-img__1 grid-img__2 grid-img__3"
+    ;
+    grid-template-rows: repeat(9, 1fr);
+    height: 150vh;
+}
+
+.grid-imgPrincipal{
+    background-image: url(../img/Infografía_tipos_de_Cerveza.png);
+    background-size: cover;
+    background-position: center;
+    grid-area: grid-imgPrincipal;
+    color: White;
+}
+
+.grid-img__1{
+    background-image: url(../img/opcion-1.png);
+    background-size: cover;
+    grid-area: grid-img__1;
+    color: White;
+}
+
+.grid-img__2{
+    background-image: url(../img/cervezas-frutales.png);
+    background-size: cover;
+    grid-area: grid-img__2;
+    color: White;
+}
+
+
+.grid-img__3{
+    background-image: url(../img/opcion-3.png);
+    background-size: cover;
+    grid-area: grid-img__3;
+    color: White;
+}
+
+@keyframes lateral{
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);}
+  }

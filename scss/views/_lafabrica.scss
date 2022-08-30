@@ -1,0 +1,41 @@
+.img-fondo{
+    background-image: url(../img/fabrica-cerveza-la-salve-1920.png);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color:white;
+    padding-top: 150px;
+}
+
+.flex-conteiner{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:10px;
+    
+}
+
+.flex-item{
+    width: 50vw;
+    height: 50vh;
+}
+
+@media(min-width: 480px){
+    .flex-conteiner{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@keyframes lateral{
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);}
+  }
